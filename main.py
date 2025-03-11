@@ -3,12 +3,12 @@ from typing import Optional
 import requests
 
 app = FastAPI()
-PROXYCURL_API_KEY = "x0jf75zP2soL6-X-Pn8Asw"
+PROXYCURL_API_KEY = "U83KELA5LBkUpkApB-WfWQ"
 
 PROXYCURL_ENDPOINTS = {
     "company": "https://nubela.co/proxycurl/api/v2/linkedin/search/company",
     "person": "https://nubela.co/proxycurl/api/v2/linkedin/search/person",
-    "job": "https://nubela.co/proxycurl/api/v2/linkedin/search/job",
+    "job": "https://nubela.co/proxycurl/api/v2/linkedin/company/job",
 }
 
 def fetch_data(endpoint: str, params: dict):
