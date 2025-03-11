@@ -3,7 +3,7 @@ from langchain.llms import Ollama
 from langchain.agents import initialize_agent
 from agent import SearchAPI
 
-llm = Ollama(model="llama3.1-8b")  # Correct model name for Ollama
+llm = Ollama(model="deepseek-r1:14b")  # Correct model name for Ollama
 
 agent = initialize_agent(
     tools=SearchAPI.tools,
